@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".activity.MainActivity" >
+
+    <TextView
+        android:id="@+id/ambTempLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ambient_temp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_place"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/ambTempLabel"
+        app:layout_constraintStart_toStartOf="@+id/ambTempLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ambTempLabel" />
+
+    <TextView
+        android:id="@+id/tempReader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cel_value"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tempValue"
+        app:layout_constraintTop_toBottomOf="@+id/ambTempLabel" />
+
+    <ToggleButton
+        android:id="@+id/tempButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textOff="@string/cel_value"
+        android:textOn="@string/fal_value"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressValue" />
+
+    <TextView
+        android:id="@+id/humidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ambient_humid"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempValue" />
+
+    <TextView
+        android:id="@+id/humidValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_place"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/humidLabel"
+        app:layout_constraintStart_toStartOf="@+id/humidLabel"
+        app:layout_constraintTop_toBottomOf="@+id/humidLabel" />
+
+    <TextView
+        android:id="@+id/humid_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/humid_percentage"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/humidValue"
+        app:layout_constraintStart_toEndOf="@+id/humidValue" />
+
+    <TextView
+        android:id="@+id/pressureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pressure_label"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidValue" />
+
+    <TextView
+        android:id="@+id/pressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_place"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/pressureLabel"
+        app:layout_constraintStart_toStartOf="@+id/pressureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/pressureLabel" />
+
+    <TextView
+        android:id="@+id/pressDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pressue_mbar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pressValue"
+        app:layout_constraintStart_toEndOf="@+id/pressValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tempometer</string>
+    <string name="ambient_temp">Ambient Temp</string>
+    <string name="temp_selection">CEL_FAH</string>
+    <string name="temp_place">999</string>
+    <string name="cel_value">°C</string>
+    <string name="fal_value">°F</string>
+    <string name="ambient_humid">Relative Humidity</string>
+    <string name="humid_percentage">%</string>
+    <string name="empty_space">Not Available</string>
+    <string name="location">Weather</string>
+    <string name="location_selection">LOCATION_HERE</string>
+    <string name="pressure_label">Air Pressure</string>
+    <string name="pressue_mbar">mBar</string>
+
+
+</resources>
